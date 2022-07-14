@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train_data_merged.py", line 51, in <module>
+    for data in train_dataloader:
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataset.py", line 471, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/datasets/folder.py", line 230, in __getitem__
+    sample = self.loader(path)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/datasets/folder.py", line 269, in default_loader
+    return pil_loader(path)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/datasets/folder.py", line 247, in pil_loader
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data_merged/0/20051109_57843_0400_PP.png'

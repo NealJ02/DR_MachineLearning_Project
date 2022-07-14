@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/DR_new_data_weight.py", line 67, in <module>
+    model_predictions = cnn_neural_network(input_images)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 283, in forward
+    return self._forward_impl(x)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 268, in _forward_impl
+    x = self.relu(x)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/activation.py", line 98, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/functional.py", line 1440, in relu
+    result = torch.relu_(input)
+KeyboardInterrupt

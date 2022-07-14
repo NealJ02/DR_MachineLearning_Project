@@ -1,0 +1,16 @@
+{
+    "os": "macOS-10.14.6-x86_64-i386-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-07-01T17:28:38.199754",
+    "startedAt": "2022-07-01T17:28:36.786675",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/neal/Documents/DR_MachineLearning_Project/split_data_categories.py",
+    "codePath": "split_data_categories.py",
+    "host": "Yogeshs-Air.hsd1.ca.comcast.net",
+    "username": "neal",
+    "executable": "/Users/neal/miniconda3/bin/python"
+}

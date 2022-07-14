@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/split_data_categories.py", line 59, in <module>
+    for data in train_dataloader:
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 530, in __next__
+    data = self._next_data()
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 570, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    return self.collate_fn(data)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 172, in default_collate
+    return [default_collate(samples) for samples in transposed]  # Backwards compatibility.
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 172, in <listcomp>
+    return [default_collate(samples) for samples in transposed]  # Backwards compatibility.
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/utils/data/_utils/collate.py", line 138, in default_collate
+    return torch.stack(batch, 0, out=out)
+RuntimeError: stack expects each tensor to be equal size, but got [3, 1488, 2240] at entry 0 and [3, 960, 1440] at entry 2

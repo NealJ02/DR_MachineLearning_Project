@@ -1,0 +1,22 @@
+> /Users/neal/Documents/DR_MachineLearning_Project/test_train.py(56)<module>()
+-> cost = cost_function(model_predictions, output_categories)
+
+
+(Pdb) output_categories
+tensor([0])
+
+(Pdb) model_predictions
+tensor([[ 0.8136,  1.0592,  0.2967, -0.4761, -0.5776]],
+       grad_fn=<AddmmBackward0>)
+(Pdb)
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 56, in <module>
+    cost = cost_function(model_predictions, output_categories)
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 56, in <module>
+    cost = cost_function(model_predictions, output_categories)
+  File "/Users/neal/miniconda3/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/Users/neal/miniconda3/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+
+(Pdb) q

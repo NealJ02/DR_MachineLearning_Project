@@ -1,0 +1,56 @@
+> /Users/neal/Documents/DR_MachineLearning_Project/test_train.py(58)<module>()
+-> cost = cost_function(model_predictions, output_categories)
+
+(Pdb) l
+ 53  	    model_predictions = cnn_neural_network(input_images)
+ 54  	    model_predictions_discrete = torch.argmax(model_predictions, dim=1)
+ 55  	    precision, recall, f1score, support = precision_recall_fscore_support(output_categories, model_predictions_discrete,
+ 56  	    										labels=(0,1,2,3,4), zero_division=0)
+ 57  	    pdb.set_trace()
+ 58  ->	    cost = cost_function(model_predictions, output_categories)
+ 59  	    wandb.log({"train loss": cost})
+ 60  	    wandb.watch(cnn_neural_network)
+ 61  	    cost.backward()
+ 62  	    gradient_descent.step()
+ 63  	
+(Pdb) precision
+array([1., 0., 0., 0., 0.])
+
+(Pdb) f1score
+array([0.33333333, 0.        , 0.        , 0.        , 0.        ])
+
+
+
+(Pdb) dataset.class_to_idx
+{'0': 0, '1': 1, '2': 2, '3': 3, '4': 4}
+
+
+(Pdb) dataset.class_to_idx.keys()
+dict_keys(['0', '1', '2', '3', '4'])
+
+
+
+(Pdb) output_categories
+tensor([0, 0, 2, 0, 2, 0, 0, 2])
+
+
+(Pdb) dataset.class_to_idx
+{'0': 0, '1': 1, '2': 2, '3': 3, '4': 4}
+
+(Pdb) dataset.class_to_idx.keys()
+dict_keys(['0', '1', '2', '3', '4'])
+(Pdb) --KeyboardInterrupt--
+
+
+(Pdb)
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 58, in <module>
+    cost = cost_function(model_predictions, output_categories)
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 58, in <module>
+    cost = cost_function(model_predictions, output_categories)
+  File "/Users/neal/miniconda3/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/Users/neal/miniconda3/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+
+(Pdb) q

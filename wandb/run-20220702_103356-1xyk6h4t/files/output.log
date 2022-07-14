@@ -1,0 +1,43 @@
+> /Users/neal/Documents/DR_MachineLearning_Project/test_train.py(56)<module>()
+-> cost = cost_function(model_predictions, output_categories)
+
+(Pdb) model_predictions
+tensor([[ 0.5905,  0.8299,  0.0355, -0.4229, -0.6792],
+        [ 0.7638,  0.8646,  0.3327, -0.6609, -0.6974],
+        [ 0.6819,  1.5187,  0.6807, -0.5580, -0.7960],
+        [ 0.9914,  0.9489,  0.2408, -0.2663, -0.7249],
+        [ 0.8546,  1.2561,  0.1513, -0.3816, -0.3782],
+        [ 0.8681,  1.0379,  0.4265, -0.5503, -0.0974],
+        [ 0.9816,  1.2035,  0.5333, -0.6029, -0.5944],
+        [ 0.6532,  0.8960, -0.0544, -0.4946, -0.7033]],
+       grad_fn=<AddmmBackward0>)
+
+
+
+(Pdb) output_categories
+tensor([0, 0, 2, 0, 2, 0, 0, 2])
+
+
+
+
+
+
+
+(Pdb) torch.argmax(model_predictions, argmax=1)
+*** TypeError: argmax() got an unexpected keyword argument 'argmax'
+
+
+(Pdb) torch.argmax(model_predictions, dim=1))))
+tensor([1, 1, 1, 0, 1, 1, 1, 1])
+(Pdb)
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 56, in <module>
+    labels=(0,1,2,3,4), zero_division=0)
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 56, in <module>
+    labels=(0,1,2,3,4), zero_division=0)
+  File "/Users/neal/miniconda3/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/Users/neal/miniconda3/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+
+(Pdb) q

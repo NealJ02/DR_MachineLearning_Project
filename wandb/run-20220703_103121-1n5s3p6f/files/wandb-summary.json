@@ -1,0 +1,1 @@
+{"train f1score 0": 0.761904761904762, "_timestamp": 1656870089, "_runtime": 608, "_step": 114, "train f1score 1": 0.0, "train f1score 2": 0.25, "train f1score 3": 0.0, "train loss": 1.0889520645141602, "test loss": 5.9893317222595215, "test f1score 0": 0.6086956521739131, "test f1score 1": 0.0, "test f1score 2": 0.0, "test f1score 3": 0.0, "_wandb": {"runtime": 634}}

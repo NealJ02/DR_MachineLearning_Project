@@ -1,0 +1,16 @@
+{
+    "os": "macOS-10.14.6-x86_64-i386-64bit",
+    "python": "3.9.12",
+    "heartbeatAt": "2022-07-02T17:15:49.496879",
+    "startedAt": "2022-07-02T17:15:47.296839",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py",
+    "codePath": "test_train.py",
+    "host": "Yogeshs-Air.hsd1.ca.comcast.net",
+    "username": "neal",
+    "executable": "/Users/neal/miniconda3/bin/python"
+}

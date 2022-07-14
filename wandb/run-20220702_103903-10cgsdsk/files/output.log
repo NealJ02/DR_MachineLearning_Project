@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 55, in <module>
+    precision, recall, f1score, support = sklearn.metrics.precision_recall_f1score_support(output_categories, model_predictions_discrete,
+AttributeError: module 'sklearn' has no attribute 'metrics'

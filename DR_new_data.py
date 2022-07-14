@@ -1,0 +1,88 @@
+import os
+import pandas as pd
+import pdb
+import shutil
+import torchvision
+import wandb
+import torch
+from sklearn.metrics import precision_recall_fscore_support
+#20060411_58550_0200_PP.png
+
+torch.manual_seed(2022)
+
+wandb.init(project="DRMachineLearningProject", entity="nealj06", name="new_data_project")
+wandb.config = {
+  "learning_rate": 0.001,
+  "epochs": 1,
+  "batch_size": 8,
+  'weight_decay': 0.7
+}
+
+
+# get data and split into train and test
+dataset = torchvision.datasets.ImageFolder(
+    root = 'colored_images',
+    transform = torchvision.transforms.Compose([
+        torchvision.transforms.Resize((400,500)),
+        torchvision.transforms.ToTensor()
+    ])  
+)
+
+
+trainlen = int(0.7*len(dataset))
+trainset, testset = torch.utils.data.random_split(dataset, 
+                    [trainlen, len(dataset)-trainlen])
+
+train_dataloader = torch.utils.data.DataLoader(trainset, batch_size=8, shuffle=True)
+
+test_dataloader = torch.utils.data.DataLoader(testset, batch_size=8, shuffle=True)
+
+# make and train model
+
+cnn_neural_network = torchvision.models.resnet18(pretrained=True)
+cnn_neural_network.fc = torch.nn.Linear(in_features=512, out_features=5, bias=True)
+cost_function = torch.nn.CrossEntropyLoss()
+
+gradient_descent = torch.optim.Adam(cnn_neural_network.parameters(), lr=0.001, weight_decay=0.7)
+
+cnn_neural_network.train()
+count = 0
+for data in train_dataloader:
+    input_images, output_categories = data
+    gradient_descent.zero_grad()
+    model_predictions = cnn_neural_network(input_images)
+    model_predictions_discrete = torch.argmax(model_predictions, dim=1)
+    precision, recall, f1score, support = precision_recall_fscore_support(output_categories, model_predictions_discrete,
+                                            labels=(0,1,2,3,4), zero_division=0)
+    for category_class in dataset.class_to_idx.keys():
+        category_index = dataset.class_to_idx[category_class]
+        category_f1score = f1score[category_index]
+        wandb.log({"train f1score "+category_class : f1score[category_index]})
+
+    cost = cost_function(model_predictions, output_categories)
+    wandb.log({"train loss": cost})
+    wandb.watch(cnn_neural_network)
+    cost.backward()
+    gradient_descent.step()
+
+    if count % 3 == 0:
+        cnn_neural_network.eval()
+        input_images_test, output_categories_test = iter(test_dataloader).next()
+        model_predictions_test = cnn_neural_network(input_images_test)
+        model_predictions_test_discrete = torch.argmax(model_predictions_test, dim=1)
+        cost_test = cost_function(model_predictions_test, output_categories_test)
+        wandb.log({"test loss": cost_test})  
+        cnn_neural_network.train()
+        precision, recall, f1score, support = precision_recall_fscore_support(output_categories_test, model_predictions_test_discrete,
+                                            labels=(0,1,2,3,4), zero_division=0)
+        for category_class in dataset.class_to_idx.keys():
+            category_index = dataset.class_to_idx[category_class]
+            category_f1score = f1score[category_index]
+            wandb.log({"test f1score "+category_class : f1score[category_index]})
+    count += 1
+
+
+
+
+
+

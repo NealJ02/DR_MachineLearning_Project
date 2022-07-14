@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train_data_merged.py", line 72, in <module>
+    model_predictions_test = cnn_neural_network(input_images_test)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 283, in forward
+    return self._forward_impl(x)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 273, in _forward_impl
+    x = self.layer3(x)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torchvision/models/resnet.py", line 94, in forward
+    out = self.conv2(out)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 447, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/Users/neal/miniconda3/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 443, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/neal/Documents/DR_MachineLearning_Project/test_train.py", line 25, in <module>
+    torchvision.Resize((400,500)),
+AttributeError: module 'torchvision' has no attribute 'Resize'

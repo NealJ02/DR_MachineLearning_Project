@@ -1,0 +1,149 @@
+2022-07-01 10:29:42,896 INFO    MainThread:36378 [internal.py:wandb_internal():90] W&B internal server running at pid: 36378, started at: 2022-07-01 10:29:42.895661
+2022-07-01 10:29:42,899 INFO    WriterThread:36378 [datastore.py:open_for_write():75] open: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/run-3jt01cpf.wandb
+2022-07-01 10:29:42,903 DEBUG   SenderThread:36378 [sender.py:send():232] send: header
+2022-07-01 10:29:42,903 DEBUG   SenderThread:36378 [sender.py:send():232] send: run
+2022-07-01 10:29:43,100 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: check_version
+2022-07-01 10:29:43,106 INFO    SenderThread:36378 [dir_watcher.py:__init__():197] watching files in: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files
+2022-07-01 10:29:43,107 INFO    SenderThread:36378 [sender.py:_start_run_threads():811] run started: 3jt01cpf with start time 1656696581
+2022-07-01 10:29:43,107 DEBUG   SenderThread:36378 [sender.py:send():232] send: summary
+2022-07-01 10:29:43,108 INFO    SenderThread:36378 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-07-01 10:29:43,109 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: check_version
+2022-07-01 10:29:43,223 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: run_start
+2022-07-01 10:29:43,225 DEBUG   HandlerThread:36378 [meta.py:__init__():35] meta init
+2022-07-01 10:29:43,225 DEBUG   HandlerThread:36378 [meta.py:__init__():49] meta init done
+2022-07-01 10:29:43,225 DEBUG   HandlerThread:36378 [meta.py:probe():209] probe
+2022-07-01 10:29:43,229 DEBUG   HandlerThread:36378 [git.py:repo():29] git repository is invalid
+2022-07-01 10:29:43,231 DEBUG   HandlerThread:36378 [meta.py:_save_pip():53] save pip
+2022-07-01 10:29:43,234 DEBUG   HandlerThread:36378 [meta.py:_save_pip():67] save pip done
+2022-07-01 10:29:43,234 DEBUG   HandlerThread:36378 [meta.py:_save_conda():74] save conda
+2022-07-01 10:29:44,115 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/conda-environment.yaml
+2022-07-01 10:29:44,116 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/wandb-summary.json
+2022-07-01 10:29:44,116 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/requirements.txt
+2022-07-01 10:29:45,585 DEBUG   HandlerThread:36378 [meta.py:_save_conda():84] save conda done
+2022-07-01 10:29:45,585 DEBUG   HandlerThread:36378 [meta.py:probe():247] probe done
+2022-07-01 10:29:45,593 DEBUG   SenderThread:36378 [sender.py:send():232] send: files
+2022-07-01 10:29:45,593 INFO    SenderThread:36378 [sender.py:_save_file():948] saving file wandb-metadata.json with policy now
+2022-07-01 10:29:45,601 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: stop_status
+2022-07-01 10:29:45,602 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: stop_status
+2022-07-01 10:29:45,745 DEBUG   SenderThread:36378 [sender.py:send():232] send: telemetry
+2022-07-01 10:29:46,063 INFO    Thread-11 :36378 [upload_job.py:push():132] Uploaded file /var/folders/zk/2xq32pmn6qb59z1153cpn51c0000gq/T/tmpfcverxr8wandb/3ke8hwxj-wandb-metadata.json
+2022-07-01 10:29:46,118 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/conda-environment.yaml
+2022-07-01 10:29:46,119 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/output.log
+2022-07-01 10:29:46,119 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_created():244] file/dir created: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/wandb-metadata.json
+2022-07-01 10:29:59,153 DEBUG   SenderThread:36378 [sender.py:send():232] send: telemetry
+2022-07-01 10:30:00,173 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/output.log
+2022-07-01 10:30:01,717 DEBUG   SenderThread:36378 [sender.py:send():232] send: exit
+2022-07-01 10:30:01,718 INFO    SenderThread:36378 [sender.py:send_exit():368] handling exit code: 1
+2022-07-01 10:30:01,718 INFO    SenderThread:36378 [sender.py:send_exit():370] handling runtime: 18
+2022-07-01 10:30:01,719 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:01,720 INFO    SenderThread:36378 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-07-01 10:30:01,720 INFO    SenderThread:36378 [sender.py:send_exit():376] send defer
+2022-07-01 10:30:01,721 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:01,721 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:01,722 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 0
+2022-07-01 10:30:01,723 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:01,723 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 0
+2022-07-01 10:30:01,723 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 1
+2022-07-01 10:30:01,724 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:01,724 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 1
+2022-07-01 10:30:01,813 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:01,814 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 1
+2022-07-01 10:30:01,814 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 2
+2022-07-01 10:30:01,814 DEBUG   SenderThread:36378 [sender.py:send():232] send: stats
+2022-07-01 10:30:01,815 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:01,815 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 2
+2022-07-01 10:30:01,816 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:01,816 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 2
+2022-07-01 10:30:01,816 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 3
+2022-07-01 10:30:01,817 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:01,817 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 3
+2022-07-01 10:30:01,817 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:01,817 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 3
+2022-07-01 10:30:01,817 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 4
+2022-07-01 10:30:01,818 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:01,818 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 4
+2022-07-01 10:30:01,819 DEBUG   SenderThread:36378 [sender.py:send():232] send: summary
+2022-07-01 10:30:01,820 INFO    SenderThread:36378 [sender.py:_save_file():948] saving file wandb-summary.json with policy end
+2022-07-01 10:30:01,820 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:01,820 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 4
+2022-07-01 10:30:01,820 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 5
+2022-07-01 10:30:01,821 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:01,821 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 5
+2022-07-01 10:30:01,821 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:01,822 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 5
+2022-07-01 10:30:01,828 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:02,183 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/output.log
+2022-07-01 10:30:02,183 INFO    Thread-7  :36378 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/wandb-summary.json
+2022-07-01 10:30:02,233 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 6
+2022-07-01 10:30:02,233 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:02,234 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:02,234 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 6
+2022-07-01 10:30:02,234 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:02,234 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 6
+2022-07-01 10:30:02,235 INFO    SenderThread:36378 [dir_watcher.py:finish():312] shutting down directory watcher
+2022-07-01 10:30:02,339 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,187 INFO    SenderThread:36378 [dir_watcher.py:_on_file_modified():257] file/dir modified: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/config.yaml
+2022-07-01 10:30:03,188 INFO    SenderThread:36378 [dir_watcher.py:finish():342] scan: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files
+2022-07-01 10:30:03,188 INFO    SenderThread:36378 [dir_watcher.py:finish():356] scan save: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/requirements.txt requirements.txt
+2022-07-01 10:30:03,188 INFO    SenderThread:36378 [dir_watcher.py:finish():356] scan save: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/output.log output.log
+2022-07-01 10:30:03,189 INFO    SenderThread:36378 [dir_watcher.py:finish():356] scan save: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/config.yaml config.yaml
+2022-07-01 10:30:03,189 INFO    SenderThread:36378 [dir_watcher.py:finish():356] scan save: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/wandb-summary.json wandb-summary.json
+2022-07-01 10:30:03,192 INFO    SenderThread:36378 [dir_watcher.py:finish():356] scan save: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/conda-environment.yaml conda-environment.yaml
+2022-07-01 10:30:03,201 INFO    SenderThread:36378 [dir_watcher.py:finish():356] scan save: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/wandb-metadata.json wandb-metadata.json
+2022-07-01 10:30:03,205 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 7
+2022-07-01 10:30:03,205 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:03,212 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:03,212 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 7
+2022-07-01 10:30:03,213 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:03,213 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 7
+2022-07-01 10:30:03,214 INFO    SenderThread:36378 [file_pusher.py:finish():145] shutting down file pusher
+2022-07-01 10:30:03,317 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,317 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:03,422 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,423 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:03,526 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,527 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:03,634 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,634 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:03,712 INFO    Thread-12 :36378 [upload_job.py:push():132] Uploaded file /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/requirements.txt
+2022-07-01 10:30:03,716 INFO    Thread-15 :36378 [upload_job.py:push():132] Uploaded file /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/wandb-summary.json
+2022-07-01 10:30:03,719 INFO    Thread-14 :36378 [upload_job.py:push():132] Uploaded file /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/config.yaml
+2022-07-01 10:30:03,726 INFO    Thread-16 :36378 [upload_job.py:push():132] Uploaded file /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/conda-environment.yaml
+2022-07-01 10:30:03,736 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,737 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:03,825 INFO    Thread-13 :36378 [upload_job.py:push():132] Uploaded file /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/files/output.log
+2022-07-01 10:30:03,841 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,842 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:03,947 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:03,947 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:04,030 INFO    Thread-6  :36378 [sender.py:transition_state():389] send defer: 8
+2022-07-01 10:30:04,031 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:04,031 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 8
+2022-07-01 10:30:04,032 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:04,032 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 8
+2022-07-01 10:30:04,053 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:04,128 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 9
+2022-07-01 10:30:04,128 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:04,128 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:04,128 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 9
+2022-07-01 10:30:04,129 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:04,129 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 9
+2022-07-01 10:30:04,129 INFO    SenderThread:36378 [sender.py:transition_state():389] send defer: 10
+2022-07-01 10:30:04,130 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: defer
+2022-07-01 10:30:04,130 DEBUG   SenderThread:36378 [sender.py:send():232] send: final
+2022-07-01 10:30:04,130 INFO    HandlerThread:36378 [handler.py:handle_request_defer():164] handle defer: 10
+2022-07-01 10:30:04,130 DEBUG   SenderThread:36378 [sender.py:send():232] send: footer
+2022-07-01 10:30:04,130 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: defer
+2022-07-01 10:30:04,131 INFO    SenderThread:36378 [sender.py:send_request_defer():385] handle sender defer: 10
+2022-07-01 10:30:04,231 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: poll_exit
+2022-07-01 10:30:04,231 DEBUG   SenderThread:36378 [sender.py:send_request():246] send_request: poll_exit
+2022-07-01 10:30:04,232 INFO    SenderThread:36378 [file_pusher.py:join():150] waiting for file pusher
+2022-07-01 10:30:04,616 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: sampled_history
+2022-07-01 10:30:04,617 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: get_summary
+2022-07-01 10:30:04,618 DEBUG   HandlerThread:36378 [handler.py:handle_request():141] handle_request: shutdown
+2022-07-01 10:30:04,618 INFO    HandlerThread:36378 [handler.py:finish():806] shutting down handler
+2022-07-01 10:30:05,133 INFO    WriterThread:36378 [datastore.py:close():279] close: /Users/neal/Documents/DR_MachineLearning_Project/wandb/run-20220701_102941-3jt01cpf/run-3jt01cpf.wandb
+2022-07-01 10:30:05,513 INFO    SenderThread:36378 [sender.py:finish():1110] shutting down sender
+2022-07-01 10:30:05,513 INFO    SenderThread:36378 [file_pusher.py:finish():145] shutting down file pusher
+2022-07-01 10:30:05,513 INFO    SenderThread:36378 [file_pusher.py:join():150] waiting for file pusher
+2022-07-01 10:30:05,519 INFO    MainThread:36378 [internal.py:handle_exit():80] Internal process exited
